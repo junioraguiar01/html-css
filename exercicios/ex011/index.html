@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinámicas</h1>
+    <p>Tente abri esse site em  varios dispositivos diferentes ou simplesmente aumente e diminua o tamamho do seu navegador.</p>
+    <picture>
+         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+         <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio</p>
+    <audio src="midias/Wooden Train Whistle.mp3" control loop></audio>
+    <audio preload="auto" controls>
+        <source src="midias/happynation.mp3" type="audio/mpeg">
+        <source src="midias/happynation.ogg" type="audio/ogg">
+        <p>infelismente seu navegador não consegue reproduzir o áudio.</p><a href="midias/happynation.mp3">Click aqui para baixar o arquivo mp3</a>
+    </audio>
+    <h1>Videos</h1>
+   <video src="video/dragon-ball.m4v" width="300px" poster="imagens/dragon-ball.jpg" controls autoplay></video>
+ 
+    
+
+
+  
+   
+</body>
+</html>
